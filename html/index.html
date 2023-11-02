@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product App</title>
+
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <header>
+            <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">ProductApp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- APP -->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card" id="Card">
+                    <div class="card-header text-center">
+                        <h3 class="m-4">Agrega un producto</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="product-form" class="card-body">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Nombre del producto">
+                            </div>
+                            <div class="form-group pt-4">
+                                <input class="form-control" type="number" value="0.00" step="0.01" name="price" id="price" placeholder="Precio del producto">
+                            </div>
+                            <div class="form-group pt-4">
+                                <input class="form-control" type="number" value="2023" name="year" min="1900" max="2090" id="year" placeholder="Año del producto">
+                            </div>
+                            <div class="pt-4 d-grid gap-2">
+                                <input type="button" value="Guardar" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8"></div>
+        </div>
+    </div>
+
+    <!-- JS AJAX APP -->
+    <script src="../assets/js/ajaxApp.js"></script>
+    
+</body>
+</html>
